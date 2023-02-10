@@ -1,0 +1,76 @@
+<br>
+<div class="cuadrado">
+    <h1>Registro</h1>
+</div>
+<br>
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="centrar">
+            <div class="cen">
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Materia</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="calificacion.materia" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Nota</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="staticEmail" [(ngModel)]="calificacion.nota" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Nota examen</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="staticEmail" [(ngModel)]="calificacion.notaExamen" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Nota final</label>
+                    <div class="col-sm-10">
+                      <input type="number" class="form-control" id="staticEmail" [(ngModel)]="calificacion.notaFinal" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Estado</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="calificacion.estado" value="">
+                    </div>
+                </div>
+                <div class="centrar">
+                    <div class="centrarBoton">
+                      <button type="button" class="btn btn-primary" (click)="registro()">Registrarse</button>
+                    </div>
+                </div>
+                  
+            </div>    
+        </div>   
+      </div>
+      <div class="col">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Materia</th>
+                <th scope="col">Nota</th>
+                <th scope="col">Nota Examen</th>
+                <th scope="col">Nota Final</th>
+                <th scope="col">Estado</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let asi of calificaciones">
+                <th scope="row">{{asi.materia}}</th>
+                <td>{{asi.nota}}</td>
+                <td>{{asi.notaExamen}}</td>
+                <td>{{asi.notaFinal}}</td>
+                <td>{{asi.estado}}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+</div>
+
+
+<button type="button" class="btn btn-danger" (click)="regresar()">Regresar</button>

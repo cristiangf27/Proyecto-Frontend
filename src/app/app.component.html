@@ -1,0 +1,30 @@
+<nav class="navbar navbar-light" style="background-color: #1a96fc;">
+  <div class="container-fluid">
+    
+    <div class="horizontal">
+      <a href="cargar">
+        
+      </a>
+      <h1 class="bajar">
+        Horario 📚
+      </h1>
+    </div>
+    <ul class="horizontal bajar">
+      <li class="item">
+        <button type="button" class="btn btn-secondary" (click)="inicio()">home</button>
+      </li>
+      <li class="item">
+        <button type="button" class="btn btn-secondary" (click)="inicioSesion()">{{sesion}}</button>
+      </li>
+      <li class="item">
+        <button type="button" class="btn btn-secondary" (click)="acercade()">Acerca de</button>
+      </li>
+  </ul>
+  </div>
+  
+</nav>
+<router-outlet>
+  
+  <ngx-toast-notifier></ngx-toast-notifier>
+
+</router-outlet>

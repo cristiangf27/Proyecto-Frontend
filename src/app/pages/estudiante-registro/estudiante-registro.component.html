@@ -1,0 +1,74 @@
+<br>
+<div class="cuadrado">
+    <h1>Registro</h1>
+</div>
+<br>
+<div class="container text-center">
+  <div class="row">
+    <div class="col">
+      <div class="centrar">
+        <div class="cen">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="staticEmail" [(ngModel)]="estudiante.nombre" value="">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Documento</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="staticEmail" [(ngModel)]="estudiante.documento" value="">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Correo</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="staticEmail" [(ngModel)]="estudiante.correo" value="">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Fecha Nacimiento</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="staticEmail" [(ngModel)]="estudiante.fecha" value="">
+                </div>
+            </div>
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Semestre</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="staticEmail" [(ngModel)]="estudiante.semestre" value="">
+                </div>
+            </div>
+            <div class="centrar">
+                <div class="centrarBoton">
+                  <button type="button" class="btn btn-primary" (click)="registro()">Registrarse</button>
+                </div>
+            </div>
+              
+        </div>    
+    </div>  
+    </div>
+    <div class="col">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Documento</th>
+            <th scope="col">Correo</th>
+            <th scope="col">Fecha Nacimiento</th>
+            <th scope="col">Semestre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let est of estudiantes">
+            <th scope="row">{{est.nombre}}</th>
+            <td>{{est.documento}}</td>
+            <td>{{est.correo}}</td>
+            <td>{{est.fecha}}</td>
+            <td>{{est.semestre}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+</div>
+ 
+<button type="button" class="btn btn-danger" (click)="regresar()">Regresar</button>

@@ -1,0 +1,36 @@
+<br>
+<div class="cuadrado">
+    <h1>Inicio de sesión</h1>
+</div>
+
+    <div class="centrar">
+        <div>
+            <img src="../../../assets/images/iniciosesion.png" alt="iniciosesion.png" height="300" width="300">
+        </div>
+    </div>
+    <div class="centrar">
+        <div class="cen">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Usuario</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="staticEmail" [(ngModel)]="sesion.correo" value="">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword" [(ngModel)]="sesion.contrasenia">
+                </div>
+              </div>
+              <div class="centrar">
+                <div class="centrarBoton">
+                  <button type="button" class="btn btn-primary" (click)="loggin()">Iniciar Sesion</button>
+                </div>
+                <div class="centrarBoton">
+                  <button type="button" class="btn btn-primary" (click)="registro()">Registrarse</button>
+                </div>
+              </div>
+              
+        </div>    
+    </div>   
+<button type="button" class="btn btn-danger" (click)="regresar()">Regresar</button>

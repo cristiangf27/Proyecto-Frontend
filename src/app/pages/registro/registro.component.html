@@ -1,0 +1,50 @@
+<br>
+<div class="cuadrado">
+    <h1>Registro</h1>
+</div>
+
+<div class="centrar">
+    <div>
+      <img src="../../../assets/images/registro.png" alt="iniciosesion.png" height="300" width="300">
+    </div>
+  </div>
+  <br>
+  <div class="centrar">
+    <div class="cen">
+      <div class="mb-3 row">
+        <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="staticEmail" [(ngModel)]="registro.nombres" value="">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="fnacimiento" class="col-sm-2 col-form-label">Fecha nacimiento</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="fnacimiento" [(ngModel)]="registro.fechaNacimiento">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="direcc" class="col-sm-2 col-form-label">Direccion</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="direcc" [(ngModel)]="registro.direccion">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="correo" class="col-sm-2 col-form-label">Correo</label>
+        <div class="col-sm-10">
+          <input type="text" class="form-control" id="correo" [(ngModel)]="registro.correo">
+        </div>
+      </div>
+      <div class="mb-3 row">
+        <label for="inputPassword" class="col-sm-2 col-form-label">Contraseña</label>
+        <div class="col-sm-10">
+          <input type="password" class="form-control" id="inputPassword" [(ngModel)]="registro.contrasenia">
+        </div>
+      </div>
+      <div class="centrar">
+          <button type="button" class="btn btn-primary" (click)="registrarse()">Registrarse</button>
+      </div>
+  
+    </div>
+  </div>
+  <button type="button" class="btn btn-danger" (click)="regresar()">Regresar</button>

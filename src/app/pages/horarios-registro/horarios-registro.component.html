@@ -1,0 +1,60 @@
+<br>
+<div class="cuadrado">
+    <h1>Registro</h1>
+</div>
+<br>
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="centrar">
+            <div class="cen">
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Dia</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="horario.dia" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Hora inicio</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="horario.horainicio" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Hora final</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="horario.horafin" value="">
+                    </div>
+                </div>
+                <div class="centrar">
+                    <div class="centrarBoton">
+                      <button type="button" class="btn btn-primary" (click)="registro()">Registrarse</button>
+                    </div>
+                </div>
+                  
+            </div>    
+        </div>   
+      </div>
+      <div class="col">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Dia</th>
+                <th scope="col">Hora Inicio</th>
+                <th scope="col">Hora Fin</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let hor of horarios">
+                <th scope="row">{{hor.dia}}</th>
+                <td>{{hor.horainicio}}</td>
+                <td>{{hor.horafin}}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+</div>
+
+
+<button type="button" class="btn btn-danger" (click)="regresar()">Regresar</button>

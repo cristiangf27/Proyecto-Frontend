@@ -1,0 +1,40 @@
+.cuadrado {
+    width: 400px;           
+    height: 55px;   
+    text-align:center;       
+    background: red;   
+    color: rgb(255, 255, 255);    
+    border: 2px solid #000;
+}
+
+.centrar{
+    
+    padding-top: 5px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.justificar{
+    
+    padding-top: 5px;
+    display: flex;
+    justify-content: left;
+
+}
+
+.centrarBoton{
+    
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.cen{
+
+    width: 600px;           
+    height: 200px;  
+    text-align: center;
+
+}

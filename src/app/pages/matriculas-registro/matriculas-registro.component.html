@@ -1,0 +1,88 @@
+<br>
+<div class="cuadrado">
+    <h1>Registro</h1>
+</div>
+<br>
+<div class="container text-center">
+    <div class="row">
+      <div class="col">
+        <div class="centrar">
+            <div class="cen">
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Carrera</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="matricula.carrera" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Modalidad</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="matricula.modalidad" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Periodo</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="matricula.periodo" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Correo</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="matricula.correo" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Identificacion</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="matricula.identificacion" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">Nombre</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="matricula.nombre" value="">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="staticEmail" class="col-sm-2 col-form-label">metodoPago</label>
+                    <div class="col-sm-10">
+                      <input type="text" class="form-control" id="staticEmail" [(ngModel)]="matricula.metodoPago" value="">
+                    </div>
+                </div>
+                <div class="centrar">
+                    <div class="centrarBoton">
+                      <button type="button" class="btn btn-primary" (click)="registro()">Registrarse</button>
+                    </div>
+                </div>
+                  
+            </div>    
+        </div>   
+      </div>
+      <div class="col">
+        <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Carrera</th>
+                <th scope="col">Modalidad</th>
+                <th scope="col">Periodo</th>
+                <th scope="col">Identificacion</th>
+                <th scope="col">Pago</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr *ngFor="let mat of matriculas">
+                <th scope="row">{{mat.carrera}}</th>
+                <td>{{mat.modalidad}}</td>
+                <td>{{mat.periodo}}</td>
+                <td>{{mat.identificacion}}</td>
+                <td>{{mat.metodoPago}}</td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+</div>
+
+
+<button type="button" class="btn btn-danger" (click)="regresar()">Regresar</button>
